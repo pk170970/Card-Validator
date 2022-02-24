@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validator</title>
+    <style>
+        html {
+            background: url("https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat;
+            background-size: 100%;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 6rem;
+            color: #00050a;
+        }
+
+        p {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #b7fb3c;
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .btn {
+            border-radius: 9px;
+            border: 5px solid #fbfff4;
+            padding: 8px 28px;
+            margin: 20px 2px;
+            background-color: cadetblue;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        @media(max-width: 1000px){
+            .heading{
+                font-size: 3rem;
+            }
+            .btn{
+                border-radius: 8px;
+                border: 2px solid #fbfff4;
+                padding: 8px 15px;
+                margin: 8px 2px;
+                background-color: cadetblue;
+                font-size: medium;
+                font-weight: bold;
+            }
+        }
+        @media(max-width: 1240px) and (min-width: 1000px){
+            .heading{
+                font-size: 3rem;
+            }
+        }
+        @media(max-width: 632px){
+            .heading{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+        @media(max-width: 430px){
+            .heading{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        @media(max-width: 320px){
+            .heading{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .btn{
+                border-radius: 8px;
+                border: 2px solid #fbfff4;
+                padding: 5px 15px;
+                margin: 8px 2px;
+                background-color: cadetblue;
+                font-size: small;
+                font-weight: bold;
+            }
+        }
+        
+        @media(min-width: 1001px){
+            
+            .btn{
+                border-radius: 23px;
+                border: 11px solid #fbfff4;
+                padding: 15px 15px;
+                margin: 12px 2px;
+                background-color: cadetblue;
+                font-size: xx-large;
+                font-weight: bolder;
+            }
+            
+        }
+        
+
+   
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Validate Your Card with Our best Website without any cost.</h1>
+    <div class="box">
+        <p id="message">Card Validator</p>
+        <button onclick="validator()" class="btn">Press this button to Validate</button>
+    </div>
+
+
+
+
+    <script src="validate.js"></script>
+</body>
+
+</html>
